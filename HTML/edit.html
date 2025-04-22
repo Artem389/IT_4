@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактировать событие</title>
+    <link rel="stylesheet" href="/CSS/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Редактировать событие</h1>
+        
+        <form id="editEventForm">
+            <div class="form-group">
+                <label for="editEventName">Название:</label>
+                <input type="text" id="editEventName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="editEventDate">Дата:</label>
+                <input type="date" id="editEventDate" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="editEventCategory">Категория:</label>
+                <select id="editEventCategory" required>
+                    <option value="личные">Личные</option>
+                    <option value="рабочие">Рабочие</option>
+                    <option value="общественные">Общественные</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="editEventDescription">Описание:</label>
+                <textarea id="editEventDescription" rows="4"></textarea>
+            </div>
+            
+            <div class="buttons">
+                <button type="submit">Сохранить</button>
+                <button type="button" id="deleteBtn">Удалить</button>
+                <button type="button" id="cancelEditBtn">Отмена</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="/JS/edit.js"></script>
+</body>
+</html>
