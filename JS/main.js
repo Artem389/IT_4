@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Используем requestAnimationFrame для плавной анимации
         requestAnimationFrame(() => {
-            // Очищаем список после начала анимации
+            // Форма для создания карточек
             eventsList.innerHTML = '';
             
             // Создаем карточки с анимацией
